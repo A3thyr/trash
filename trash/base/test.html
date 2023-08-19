@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <base href="test.html">
+        <meta charset=utf-8>
+        <title>Название вкладки</title>        
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+      
+    </head>
+    <body>
+
+        <header>
+            <nav id="begin">
+                <ul class="vkladki">
+                    <li class="vkladki_link"><a href="/.">Главная</a></li>
+                    <li class="vkladki_link"><a href="/">HTML/CSS</a></li>
+                    <li class="vkladki_link"><a href="">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p>
+            <h2>Разделы страницы(этого говна)</h2>
+        </p>
+        <nav id="sections">
+            <ul>
+                <li><a class="page_link" href="#part1">Работа с параграфами</a></li><br>
+                <li><a class="page_link" href="#part2">ASCII(а вообще это работа с тегом pre)</a></li><br>
+                <li><a class="page_link" href="#part3">Работа со списками</a></li><br>
+                <li><a class="page_link" href="#part4">Фотка(а также details)</a></li><br>
+                <li><a class="page_link" href="#part5">Таблицы</a></li><br>
+                <li><a class="page_link" href="#part6">Работа со ссылками</a></li><br>
+                <li><a class="page_link" href="#part7">АЙфреймы</a></li><br>
+                <li><a class="page_link" href="#part8">Формы, много форм</a></li><br>
+            </ul>
+        </nav>
+        <aside id="ad" style="float:right;">
+            <h2>Здесь могла бы быть ваша реклама</h2>
+        </aside>
+        <main>
+            <h2 id="part1">Работа с параграфами</h2>
+            <p>Абзац</p>
+            <p>Форматирование в <mark>HTML5</mark></p>
+            <p>Это <b>выделенный</b> текст</p>
+            <p>Это <strong>важный</strong> текст</p>
+            <p>Это <del>зачеркнутый</del> текст</p>
+            <p>Это <s>недействительный</s> текст</p>
+            <p>Это <em>важный</em> текст</p>
+            <p>Это текст <i>курсивом</i> </p>
+            <p>Это <ins>добавленный</ins> текст</p>
+            <p>Это <u>подчеркнутый</u> текст</p>
+            <p>X<sub>i</sub> = Y<sup><small>2</small></sup> + Z<sup><small>2</small></sup></p>
+        </main>
+        <p>Второй абзац</p>
+        <div>Блок</div> 
+        <pre id="part2"> 
+                      ⠠⡄⢠⡄⣠⠤⢤⡀⣤⠀⢠⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡏⠀⣿⠀⢨⡇⣿⠀⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠈⠉⠉⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⢠⠤⣄⢠⡄⠀⣤⢀⣠⢤⡀⢠⡄⠀⡄⢠⡀⠀⢠⣤⣤⡀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⣙⠲⢦⢸⡗⠒⣿⢸⡁⠀⣿⢸⡇⠀⡇⢸⡇⠀⢸⡇⠀⡷⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠈⠛⠋⠈⠃⠀⠋⠀⠙⠛⠁⠀⠙⠛⠁⠘⠛⠛⠘⠛⠋⠁⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⢀⡀⢀⠀⡀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡷⣯⠀⢸⠀⡇⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠃⠈⠓⠘⠀⠛⠒⠂⠛⠒⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⣀⠀⢀⡀⢀⣀⡀⠀⡀⠀⣀⢀⣀⣀⡀⢀⣀⣀⠀⣀⣀⡀⣀⠀⠀⢀⣀⣀⠀
+            ⠀⠘⢷⠏⢰⡏⠀⢹⠄⡇⠀⣿⢸⣧⢤⡇⠘⠦⣬⡀⡧⠤⠄⣿⠀⠀⢸⠤⠄⠀
+            ⠀⠀⠘⠀⠀⠛⠒⠋⠀⠛⠒⠋⠘⠃⠀⠓⠘⠲⠚⠁⠓⠒⠂⠛⠒⠒⠘⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⢀⠀⢀⣀⠀⢀⠀⢀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⢆⣸⢠⡏⠉⢹⡈⣇⡼⣇⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠈⠿⠀⠳⠶⠞⠀⠹⠇⠸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠄⠄⠄⠄⠄⠄⠄⠄⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄⢀⣀⣀⣀⡀⠄⢀⣠⡔⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣰⢿⣿⣿⣿⣿⣿⣿⣷⡆⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣻⣟⣿⣿⡿⣟⣛⣿⡃⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣧⣿⣾⣿⣷⣿⣷⣿⣿⣿⣷⣽⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⡟⣟⣿⣿⠺⣟⣻⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡝⠻⠵⠿⠿⢿⣿⣿⢳⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣧⠈⣛⣛⣿⣿⡿⣡⣞⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡧⠄⠙⠛⠛⢁⣴⣿⣿⣷⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⡿⠟⠉⠄⠄⢠⠄⣀⣠⣾⣿⣿⡿⠟⠁⠄⠈⠛⢿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⡟⠉⠄⠄⢀⠠⠐⠒⠐⠾⠿⢟⠋⠁⠄⢀⣀⠠⠐⠄⠂⠈⠻⢿⣿⣿
+            ⣿⣿⣿⠋⠁⠄⢀⡈⠄⠄⠄⠄⠄⠄⠄⠄⠁⠒⠉⠄⢠⣶⠄⠄⠄⠄⠄⠈⠫⢿
+            ⣿⣿⡟⠄⢔⠆⡀⠄⠈⢀⠄⠄⠄⠄⠄⠄⠄⢄⡀⠄⠈⡐⢠⠒⠄⠄⠄⠄⢀⣂
+            ⣿⣿⠁⡀⠄⠄⢇⠄⠄⢈⠆⠄⠄⢀⠔⠉⠁⠉⠉⠣⣖⠉⡂⡔⠂⠄⢀⠔⠁⠄
+            ⣿⡿⠄⠄⠄⠄⢰⠹⣗⣺⠤⠄⠰⡎⠄⠄⠄⠄⠄⠄⠘⢯⡶⢟⡠⠰⠄⠄⠄⠄
+        </pre>
+        <input 
+            type=button 
+            value="Не нажимать"
+        >
+        <h2 id="part3">Нумерованный список</h2>
+            <ol class="list1">
+                <li class="list1_item">Колбаса</li>
+                <li class="list1_item">Сыр</li>
+                <li class="list1_item">Салат</li>
+                <li class="list1_item">Помидоры</li>
+            </ol>
+        <h2>Ненумерованный список</h2>
+            <ul style="list-style-type: disc;">
+                <li>Колбаса</li>
+                <li>Сыр</li>
+                <li>Салат</li>
+                <li>Помидоры</li>
+            </ul>
+        <details id="part4">
+            <summary>Здесь должна была быть фотка, но не пошло(UPD:заработала сучка)</summary>
+                <figure>
+                    <figcaption>Балканы как обычно</figcaption>
+                    <img src="./most respectful dialogue in balkans.PNG" alt="Тут может быть ваша реклама">
+                </figure>
+        </details>     
+        <dl>
+            <dt>Рекурсия</dt>
+            <dd>определение, описание, изображение какого-либо объекта или процесса внутри самого этого объекта или процесса, то есть ситуация, когда объект является частью самого себя.</dd>
+        </dl>   
+        <table id="part5">
+            <caption><b>Популярные смартфоны 2015(лол)</b></caption>
+            <thead>
+                <tr>
+                    <td>Модель</td> <td>Компания</td> <td>Цена</td>
+                </tr>
+            </thead>
+            <tbody>   
+                <tr>
+                    <td>Nexus 6P</td> <td>Huawei</td> <td>49000</td>
+                </tr>
+                <tr>
+                    <td>iPhone 6S Plus</td> <td>Apple</td> <td>62000</td>
+                </tr>
+                <tr>
+                    <td>Lumia 950 XL</td> <td>Microsoft</td> <td>35000</td>
+                </tr>
+            </tbody> 
+            <tfoot>
+                <tr>
+                    <th colspan="3">Информация по состоянию на 17 марта(2015 года опять же -_-)</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h2 id="part6">Работа со ссылками</h2>
+        <a href="http://metanit.com/web/html5/" target="_self">Это база.</a>
+        <a href="#paragraph1">Параграф 1</a> | <a href="#paragraph2">Параграф 2</a> | <a href="#paragraph3">Параграф 3</a>
+            <h2 id="paragraph1">Параграф 1</h2>
+                <p class="lang_test" lang="fr">Où est-ce que tu habites?</p>
+            <h2 id="paragraph2">Параграф 2</h2>
+                <p class="lang_test" lang="es">Mi hermano está leyendo un libro.</p>
+            <h2 id="paragraph3">Параграф 3</h2>
+                <p class="lang_test" lang="ru">Да ты шо.</p>
+            <h2>Параграф 4</h2>
+                <p>Здесь можно послать меня нахуй: <a class="doka" href="https://doka.guide/css/attr/"></a></p>
+        <h2 id="part7">Педивикия</h2>
+        <iframe src="https://www.wikipedia.org/" width="640" height="480"></iframe>
+        <form id="part8">
+            <h2>Выберите гарнир</h2>   
+            <p>
+                <label class="radio_label">
+                    <input class="radio"
+                        type="radio" 
+                        value="rice" 
+                        name="garnir"
+                    /><span class="radio_span">Рис</span> 
+                </label>
+            </p>
+            <p>
+                <label class="radio_label">
+                    <input class="radio"
+                            type="radio" 
+                            value="pasta" 
+                            name="garnir"
+                    /><span class="radio_span">Макароны</span>
+                </label>
+            </p>
+        </form>
+
+        <h2>Круг, ахуеть</h2>
+        <div class="color-circle"></div>
+
+        <h2>Балуемся с фильтрами</h2>
+        <div class="filters">
+            <button class="filters__button" aria-pressed="true">
+                <code class="filters_code">filter: blur(3px)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: brightness(30%)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: contrast(250%)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: drop-shadow(4px 4px red)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: grayscale(80%)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: hue-rotate(0.5turn)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: invert(100%)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: opacity(40%)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: saturate(390%)</code>
+            </button>
+            <button class="filters__button" aria-pressed="false">
+                <code class="filters__code">filter: sepia(0.6)</code>
+            </button>
+            <img class="filters_img" 
+            src="./img/574476.jpg"
+            width="560" height="580"
+            style="filter: blur(3px)"
+            alt="Увы, пикчи не будэ"
+            >
+        </div>
+        <script src="./ДЖАФАСКРЕПТ!!!.js"></script>
+        <form method="post" action="http://vashservak/login">
+            <fieldset>
+                <legend>Введите данные:</legend>
+                    <label for="v">Логин: </label>
+                    <input class="log__pass"
+                        type="text" 
+                        name="v" 
+                        placeholder="Введите логин или никнейм" 
+                        size="25" 
+                        required
+                    /><br>
+                    <label for="j">Пароль: </label>
+                    <input class="log__pass"
+                        type="password" 
+                        name="j" 
+                        placeholder="Введите пароль" 
+                        maxlength="16" 
+                        required
+                    /><br>
+                    <input 
+                        type="submit" 
+                        value="Войти"
+                    />
+                    <input 
+                        type="reset" 
+                        value="Отмена"
+                    />
+            </fieldset>        
+        </form>
+        <form>
+            <p> 
+                <label for="track"><span data-tip="Офк трек Канье">Выберите лучший трек: </span></label>
+                <input 
+                    list="BestTrack" 
+                    type="text" 
+                    name="track" 
+                    placeholder="Название трека" 
+                /> 
+            </p>
+            <datalist id="BestTrack">
+                <option value="Runaway"></option>
+                <option value="All of the Lights"></option>
+                <option value="The Glory"></option>
+            </datalist>
+        </form>
+        <form>
+            <p>
+                <label class="label" for="hour">Который час? </label>
+                    <div>
+                        <input
+                            id="hour"
+                            name="count"
+                            type="number"
+                            class="with-range"
+                            min="0"
+                            max="23"
+                            step="1"
+                            placeholder="Введите число от 0 до 23"
+
+                        />
+                        <p class="validation-error">Введите число от 0 до 23</p>
+                    </div>
+            </p>
+        </form>
+        <form>
+            <p>
+                <label for="f">Поисковая строка: </label>
+                <input 
+                    type="search" 
+                    name="f" 
+                    placeholder="Введите запрос" 
+                />
+                <input 
+                    type="submit" 
+                    value="Поиск" 
+                />
+            </p>
+        </form>
+        <form class="bank">
+            <label class="form__item">
+                <input class="bank__input"
+                    type="tel" 
+                    name="nc" 
+                    pattern="[0-9\s]{13;19}" 
+                    maxlength="16" 
+                    placeholder="XXXX XXXX XXXX XXXX" 
+                    tabindex="0"
+                />
+                <span class="form__label">Номер банковской карты: </span>
+            </label>
+        </form>
+        <form>
+            <p>
+                <label for="favcolor">Выберите цвет:</label>
+                <input 
+                    type="color" 
+                    id="favcolor" 
+                    name="favcolor"
+                />
+            </p>
+        </form>
+        <form>
+            <p>
+                <label for="email">Email: </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="example@gmail.com"
+                />
+            </p>
+            <p>
+                <div class="email">
+                    <label for="url">Адрес сайта: </label>
+                    <input 
+                        type="url" 
+                        id="url" 
+                        name="url" 
+                        placeholder="Введите сайт"
+                    />
+                    <span class="hint">Обязательно к заполнению</span>
+                </div>
+            </p>
+            <p>
+                <label for="tel">Телефонный номер: </label>
+                <input 
+                    type="tel" 
+                    id="tel" 
+                    name="tel" 
+                    pattern="\+\d-\d{3}-\d{3}-\d{4}"
+                    placeholder="+X(XXX)-XXX-XXXX"
+                />
+            </p>
+            <p>
+                <button type="submit">ОК</button>
+            </p>
+        </form>
+        <form enctype="multipart/form-data" method="post" action="http://vashservak/login">
+            <p>
+                <input 
+                    type="file"     
+                    name="file"
+                    multiple
+                    required
+                />
+            </p>
+            <p>
+                <input
+                    type="button"
+                    value="Отправить"
+                />
+            </p>
+        </form>
+        <form method="get">
+            <p>
+                <label for="char">Выберите героя DOTA 2: </label>
+
+                <select id="char"name="char" placeholder="CHOOSE YOUR HERO">
+                    <option selected value="CHOOSE YOUR HERO">CHOOSE YOUR HERO</option>
+                    <optgroup label="Силовики">
+                        <option value="Marci">Marci</option>
+                        <option value="Tiny">Tiny</option>
+                        <option value="Mars">Mars</option>
+                    </optgroup>
+                    <optgroup label="Ловкачи">
+                        <option value="Morph">Morphling</option>
+                        <option value="Meepo">Meepo</option>
+                        <option value="PA">Phanthom Assasin</option>
+                    </optgroup>
+                    <optgroup label="Интовики">
+                        <option value="Ka'el">Invoker</option>
+                        <option value="Lina">Lina</option>
+                        <option value="CM">Crystal Maiden</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input 
+                    type="button"
+                    value="OK"
+                />
+            </p>
+        </form>
+        <form method="get">
+            <p>
+                <label for="comment">Ваш комментарий: </label>
+            </p>
+            <p>
+                <textarea name="comment" id="comment" placeholder="Введите текст комментария"></textarea>
+            </p>
+            <p>
+                <input 
+                    type="submit" 
+                    value="Оставить комментарий"
+                />
+            </p>
+        </form>
+        <article>
+            <section>
+                <h2>Засим заключаем</h2>
+                <p>
+                    Апельсиновый сок объективно - лучший в мире напиток.
+                </p>
+            </section>
+            <section id="comms">
+                <h3>Комментарии</h3>
+                <section>
+                    <article>
+                        <h4>NaGG1BAtoRR1733</h4>
+                        <p>Яблочный в этом плане даст полизать любому портоКАЛУ</p>
+                    </article>
+                    <article>
+                        <h4>Pivnaya sis'ka</h4>
+                        <p>чел литералли: я знаю, как пишется апельсин на греческом, ыыыы, я такой умный, ыыы</p>
+                    </article>
+                </section>
+                <article>
+                    <h4>Jokerege</h4>
+                    <p>Расскажешь долбаеб..</p>
+                </article>
+                <article>
+                    <h4>No emotions</h4>
+                    <p>Кринж</p>
+                </article>
+                <article>
+                    <h4>Alexey Nobokov</h4>
+                    <p>Вода - объективно лучший напиток BASED</p>
+                </article>
+            </section>
+        </article>
+        <footer>
+            <ul class="social">
+                <li class="social__item donation">
+                    <a href="/donation" class="social__link">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <svg class="icon"   width="64px" height="64px" viewBox="0 0 69 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+                                <title>DA_Alert</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs>
+                                    <linearGradient x1="74.9906006%" y1="0%" x2="19.1353629%" y2="100%" id="linearGradient-1">
+                                        <stop stop-color="#FC8722" offset="0%"></stop>
+                                        <stop stop-color="#F57507" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Brand" transform="translate(-536.000000, -275.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Logos" transform="translate(390.000000, 120.000000)">
+                                            <g id="1" transform="translate(0.000000, 120.000000)">
+                                                <g id="DA_Alert" transform="translate(146.000000, 35.000000)">
+                                                    <path d="M34.8586103,46.5882227 L29.4383109,46.5882227 C29.1227896,46.5896404 28.8214241,46.4709816 28.6091788,46.2617625 C28.3969336,46.0525435 28.2937566,45.7724279 28.325313,45.4910942 L28.8039021,40.6038855 C28.8504221,40.0844231 29.3353656,39.684617 29.9168999,39.6862871 L35.3371993,39.6862871 C35.6527206,39.6848694 35.9540862,39.8035282 36.1663314,40.0127473 C36.3785767,40.2219663 36.4817536,40.5020819 36.4501972,40.7834156 L35.9716081,45.6706244 C35.9250881,46.1900867 35.4401446,46.5898928 34.8586103,46.5882227 Z M35.7273704,37.0196078 L30.2062624,37.0196078 C29.5964177,37.0196078 29.1020408,36.5436108 29.1020408,35.9564386 L30.6037822,19.445421 C30.6711655,18.9085577 31.1463683,18.5059261 31.7080038,18.5098321 L37.2291117,18.5098321 C37.8389565,18.5098321 38.3333333,18.9858292 38.3333333,19.5730013 L36.7874231,36.0946506 C36.71732,36.6114677 36.2684318,37.0031485 35.7273704,37.0196078 Z M68.1907868,17.7655375 C68.7783609,18.4477209 69.0654113,19.3359027 68.9874243,20.2304671 L66.8294442,44.7595227 C66.7602449,45.5618649 66.4022166,46.3125114 65.8210422,46.8737509 L48.1740082,63.9078173 C47.5440361,64.5136721 46.7011436,64.8515656 45.8244317,64.849701 L27.0379034,64.849701 L10.5001116,80 L11.780782,64.8396809 L3.37070981,64.8396809 C2.42614186,64.8404154 1.52467299,64.4469919 0.886144518,63.7553546 C0.247616048,63.0637173 -0.0692823639,62.1374374 0.0127313353,61.2024067 L5.14549723,3.00601995 C5.32162283,1.29571214 6.77326374,-0.00377492304 8.50347571,8.23911697e-06 L51.3303063,8.23911697e-06 C52.3155567,-0.000274507348 53.2515294,0.428127083 53.8916472,1.17235281 L68.1907868,17.7655375 Z M55.1118136,40.0801644 L56.4832402,24.9398854 C56.5364472,24.0422509 56.2238954,23.1611024 55.6160145,22.4949959 L47.548799,13.2364798 C46.9095165,12.5050105 45.982605,12.084699 45.0076261,12.0841753 L19.5958971,12.0841753 C17.8656851,12.0803922 16.4140442,13.3798792 16.2379186,15.090187 L13.2127128,49.1583198 C13.1430685,50.0904539 13.4642119,51.0097453 14.1001037,51.6985265 C14.7359954,52.3873077 15.6300918,52.7843324 16.5706913,52.795594 L41.5588914,52.795594 C42.4258216,52.7976549 43.2601656,52.4674704 43.8882999,51.8737504 L54.1034116,42.2044127 C54.6867718,41.6406314 55.0449815,40.8860452 55.1118136,40.0801644 Z" id="DA_Logo"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                    </a>
+                </li>
+                <li class="social__item telegram">   
+                    <a class="social__link" href="/telegram">
+                        <svg 
+                        class="icon"  
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0,0,256,256" 
+                        width="64px" 
+                        height="64px" 
+                        fill-rule="nonzero">
+                        <g  fill="#ffffff" 
+                            fill-rule="nonzero" 
+                            stroke="none" 
+                            stroke-width="1" 
+                            stroke-linecap="butt" 
+                            stroke-linejoin="miter" 
+                            stroke-miterlimit="10" 
+                            stroke-dasharray="" 
+                            stroke-dashoffset="0" 
+                            font-family="none" 
+                            font-weight="none" 
+                            font-size="none" 
+                            text-anchor="none" 
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(8,8)">
+                                <path d="M26.07031,3.99609c-0.33594,0.01563 
+                                -0.65234,0.11328 -0.93359,0.22266h-0.00391c-0.28516,0.11328 -1.64062,0.68359 
+                                -3.69922,1.54688c-2.05859,0.86719 -4.73047,1.99219 -7.38281,3.10938c-5.29687,2.23047 -10.50391,4.42578 
+                                -10.50391,4.42578l0.0625,-0.02344c0,0 -0.35937,0.11719 -0.73437,0.375c-0.19141,0.125 -0.40234,0.29688 
+                                -0.58594,0.56641c-0.18359,0.26953 -0.33203,0.68359 -0.27734,1.10938c0.08984,0.72266 0.55859,1.15625
+                                 0.89453,1.39453c0.33984,0.24219 0.66406,0.35547 0.66406,0.35547h0.00781l4.88281,1.64453c0.21875,0.70313
+                                  1.48828,4.875 1.79297,5.83594c0.17969,0.57422 0.35547,0.93359 0.57422,1.20703c0.10547,0.14063 
+                                  0.23047,0.25781 0.37891,0.35156c0.05859,0.03516 0.12109,0.0625 0.18359,0.08594c0.01953,0.01172
+                                   0.03906,0.01563 0.0625,0.01953l-0.05078,-0.01172c0.01563,0.00391 0.02734,0.01563 
+                                   0.03906,0.01953c0.03906,0.01172 0.06641,0.01563 0.11719,0.02344c0.77344,0.23438 1.39453,-0.24609
+                                    1.39453,-0.24609l0.03516,-0.02734l2.88281,-2.625l4.83203,3.70703l0.10938,0.04688c1.00781,0.44141
+                                     2.02734,0.19531 2.56641,-0.23828c0.54297,-0.4375 0.75391,-0.99609 0.75391,-0.99609l0.03516,
+                                     -0.08984l3.73438,-19.12891c0.10547,-0.47266 0.13281,-0.91406 0.01563,-1.34375c-0.11719,-0.42969 
+                                     -0.41797,-0.83203 -0.78125,-1.04687c-0.36719,-0.21875 -0.73047,-0.28516 -1.06641,
+                                     -0.26953zM25.96875,6.04688c-0.00391,0.0625 0.00781,0.05469 -0.01953,0.17578v0.01172l-3.69922,
+                                     18.92969c-0.01562,0.02734 -0.04297,0.08594 -0.11719,0.14453c-0.07812,0.0625 -0.14062,0.10156 
+                                     -0.46484,-0.02734l-5.91016,-4.53125l-3.57031,3.25391l0.75,-4.78906c0,0 9.25781,-8.62891 9.65625,
+                                     -9c0.39844,-0.37109 0.26563,-0.44922 0.26563,-0.44922c0.02734,-0.45312 -0.60156,-0.13281 -0.60156,
+                                     -0.13281l-12.17578,7.54297l-0.00391,-0.01953l-5.83594,-1.96484v-0.00391c-0.00391,0 -0.01172,-0.00391
+                                      -0.01562,-0.00391c0.00391,0 0.03125,-0.01172 0.03125,-0.01172l0.03125,-0.01562l0.03125,-0.01172c0,0
+                                       5.21094,-2.19531 10.50781,-4.42578c2.65234,-1.11719 5.32422,-2.24219 7.37891,-3.10937c2.05469,-0.86328
+                                        3.57422,-1.49609 3.66016,-1.53125c0.08203,-0.03125 0.04297,-0.03125 0.10156,-0.03125z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    </a>
+                </li>
+                <li class="social__item insta">
+                    <a class="social__link" href="/insta">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            viewBox="0,0,256,256" 
+                            width="64px" 
+                            height="64px" 
+                            fill-rule="nonzero">    
+                            <g  fill="#ffffff"  
+                                class="icon"  
+                                fill-rule="nonzero" 
+                                stroke="none" 
+                                stroke-width="1" 
+                                stroke-linecap="butt" 
+                                stroke-linejoin="miter" 
+                                stroke-miterlimit="10" 
+                                stroke-dasharray="" 
+                                stroke-dashoffset="0" 
+                                font-family="none" 
+                                font-weight="none" 
+                                font-size="none" 
+                                text-anchor="none" 
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(8,8)">
+                                    <path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 
+                                        2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,
+                                        -3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 
+                                        4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 
+                                        -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,
+                                        9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,
+                                        0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0
+                                        -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 
+                                        -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 
+                                        -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Copyright © A3ther, 2023. Все права НЕ защищены.
+            </p>
+            <address> 
+                Контакты для связи <a href="mailto:js@example.com">Томас Шлеппи</a>.
+            </address>
+        </footer>
+    </body>
+</html>
